@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0.5;
+}
+nav ul li a:hover {
+  color: rgb(236, 15, 15);
+}
+
+img {
+  border: none, vertical-align top;
+}
+
+header {
+  width: 100;
+  text-align: center;
+}
+
+div.hRight {
+  float: right;
+}
+nav {
+  /* background-color: rgba(5, 172, 255, 0.905);
+  color: #fff;
+  padding: 2px; */
+}
+
+nav a {
+  color: rgba(10, 25, 194, 0.458);
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer {
+  background-color: cadetblue;
+}
+footer p {
+  line-height: 10px;
+}
+div#access {
+  text-align: right;
+}
+header div a {
+  text-decoration: none;
+}
+div.hLeft {
+  float: left;
+}
+
+div.hRight {
+  float: right;
+}
+div#gNav {
+  clear: both;
+}
+div#header {
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul li#last {
+  display: inline-block;
+  border-right: 0px solid #000000;
+}
+nav div#hRight {
+  float: right;
+}
+
+aside#left,
+aside#right,
+section {
+  display: table-cell;
+  vertical-align: top;
+}
+
+aside#right {
+  width: 20%;
+}
+aside#left {
+  width: 20%;
+}
+div#body {
+  clear: both;
+  margin: 3px;
+  background-color: antiquewhite;
+  box-shadow: 2px 2px 2px #000000;
+  padding: 10px;
+}
+article {
+  display: table-row;
+}
+marquee a img {
+  width: 100px;
+}
+marquee {
+  height: 140px;
+}
+#nav {
+  background-color: rgba(0, 0, 255, 0.616);
+  color: white;
+  text-align: center;
+  padding: 7px;
+}
+#leftside {
+  border-bottom: blue 1px solid;
+  border-left: blue 1px solid;
+  border-right: blue 1px solid;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+div#body article aside#left div#leftside p {
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+div#body article aside#left div#leftside ul li a:hover {
+  color: rgb(0, 247, 255);
+}
+div#body article aside#left div#leftside ul li a {
+  text-decoration: none;
+}
+
+img {
+  line-height: 0px;
+}
+section p {
+  text-align: center;
+}
+div#rightside {
+  border-bottom: blue 1px solid;
+  border-left: blue 1px solid;
+  border-right: blue 1px solid;
+  margin-left: 10px;
+}
+div#rightside select {
+  padding: 5px;
+  margin: 15px;
+  width: 250px;
+  text-align: center;
+}
+div#rightside h4 {
+  margin: 5px;
+  margin-left: 20px;
+  color: red;
+}
+aside#right div#rightside marquee {
+  margin: 5px;
+}
+div.product-box {
+  width: 260px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 16px;
+  background-color: rgba(0, 255, 255, 0.274);
+}
+div#flexbox {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+div.product-box p.title {
+  color: blue;
+}
+.title a:hover {
+  font-style: italic;
+}
+
+#navFooter {
+  background-color: rgba(5, 255, 34, 0.368);
+  color: black;
+  text-align: center;
+  padding: 7px;
+}
+
+img.photo:hover {
+  scale: 1.05;
+}
+img.photo {
+  text-decoration: none;
+  height: 200px;
+}
+button.buyBtn {
+  background-color: orange;
+}
+button.buyBtn:hover {
+  scale: 1.1;
+}
+button.buyBtn a {
+  text-decoration: none;
+  color: white;
+}
+p.title a {
+  text-decoration: none;
+  line-height: 30px;
+}
+section form {
+  background-color: hsl(190, 100%, 97%);
+  padding: 10px;
+}
+div.registration {
+  margin: 10px;
+  border: 1px solid #c1a8a8;
+}
+form fieldset {
+  margin-top: 20px;
+  width: 650px;
+}
+form fieldset table {
+  width: 100%;
+}
+input#name {
+  float: right;
+  margin-right: 20px;
+  width: 300px;
+}
+
+input#year {
+  float: right;
+  margin-right: 20px;
+  width: 50px;
+}
+textarea {
+  float: right;
+  margin-right: 20px;
+  width: 300px;
+}
+
+#fieldRight {
+  float: right;
+}
+select {
+  width: 70px;
+}
+
+table.detail {
+  margin: 10px;
+  background-color: rgba(0, 255, 255, 0.716);
+  height: 100px;
+  width: 850px;
+}
+table.login {
+  margin: 10px;
+  background-color: rgba(0, 255, 255, 0.716);
+  height: 100px;
+  width: 850px;
+}
+.largeFont {
+  font-size: large;
+}
+img#tinhoccoban {
+  height: 250px;
+}
+button#buyBtn {
+  height: 20px;
+  height: 30px;
+  background-color: orange;
+}
+td#contentBook {
+}
+body p#title {
+  background-color: #605aef;
+  color: #fff;
+  border-radius: 5px;
+  width: 700px;
+  height: 30px;
+  line-height: 30px;
+}
+
+div.btn-group {
+  margin-left: 20px;
+}
+
