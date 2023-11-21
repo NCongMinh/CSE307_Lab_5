@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- <link rel="stylesheet" href="../css/StyleLogin.css" /> -->
     <link rel="stylesheet" href="../css/Style.css" />
     <link
       rel="stylesheet"
@@ -23,6 +24,20 @@
     />
   </head>
   <body>
+    <script>
+      function Checkinformation() {
+        const name = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        if (!name || !password) {
+          alert("Please fill in all fields.");
+          return;
+        }
+        /* alert("Please fill in all fields."); */
+        /* document.getElementById("result").innerHTML =
+          name + "<br>" + email + "<br>" + message; */
+      }
+    </script>
+
     <header>
       <div id="header">
         <div class="hLeft">
@@ -98,171 +113,58 @@
             </ul>
           </div>
         </aside>
+        <!-- ---------------------------------------------------------------- -->
         <section>
-          <p id="nav"><b>SÁCH MỚI</b></p>
-          <div id="flexbox">
-            <div class="product-box">
-              <p class="title">
-                <a href="detailproduct.html">Giáo trình Tin học cơ bản</a>
-              </p>
-              <img
-                class="photo"
-                src="..\img\tinhoccoban.jpg"
-                alt="sachtinhoc"
-                onclick='window.open("detailproduct.html")'
-              />
-              <br /><br />
-              <p style="font-size: small">
-                Đơn giá: <span style="color: red">126,000 VNĐ</span>
-              </p>
-              <br />
-              <button class="buyBtn">
-                <a href="detailproduct.html"
-                  ><i
-                    style="color: aliceblue"
-                    class="fa fa-shopping-cart"
-                    aria-hidden="true"
-                  ></i>
-                  ĐẶT MUA</a
-                >
-              </button>
-            </div>
+          <form
+            action=""
+            name="dangnhap"
+            method="post"
+            onsubmit="Checkinformation()"
+          >
+            <center>
+              <div class="login">
+                <legend><center>Log in</center></legend>
+                <table id="tableLogin">
+                  <tr id="navLogin">
+                    <td><label for="name">Tên đăng nhập:</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        id="username"
+                        placeholder="Nhập tên đăng nhập"
+                      />
+                    </td>
+                  </tr>
+                  <tr id="navLogin">
+                    <td><label for="pass">Mật khẩu:</label></td>
 
-            <div class="product-box">
-              <p class="title">
-                <a href="detailproduct.html">English For Tech</a>
-              </p>
-              <img
-                class="photo"
-                src="..\img\EnglishForTech.jpg"
-                alt="EnglishForTech"
-                onclick='window.open("detailproduct.html")'
-              />
-              <br /><br />
-              <p style="font-size: small">
-                Đơn giá: <span style="color: red">206,000 VNĐ</span>
-              </p>
-              <br />
-              <button class="buyBtn">
-                <a href="detailproduct.html"
-                  ><i
-                    style="color: aliceblue"
-                    class="fa fa-shopping-cart"
-                    aria-hidden="true"
-                  ></i>
-                  ĐẶT MUA</a
-                >
-              </button>
-            </div>
+                    <td>
+                      <input
+                        type="password"
+                        id="password"
+                        placeholder="Nhập mật khẩu"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <br />
+                      <center>
+                        <button type="submit" class="btn btn-success">
+                          SIGN IN
+                        </button>
+                      </center>
+                    </td>
+                  </tr>
+                </table>
+                <br />
+                <p>Not a member? <a href="Registration.html">Register</a></p>
+                <p><a href="#">Change Password</a></p>
+              </div>
+            </center>
+          </form>
 
-            <div class="product-box">
-              <p class="title">
-                <a href="detailproduct.html">BARC Computer Science</a>
-              </p>
-              <img
-                class="photo"
-                src="..\img\BARC.png"
-                alt="BARC"
-                onclick='window.open("detailproduct.html")'
-              />
-              <br /><br />
-              <p style="font-size: small">
-                Đơn giá: <span style="color: red">260,000 VNĐ</span>
-              </p>
-              <br />
-              <button class="buyBtn">
-                <a href="detailproduct.html"
-                  ><i
-                    style="color: aliceblue"
-                    class="fa fa-shopping-cart"
-                    aria-hidden="true"
-                  ></i>
-                  ĐẶT MUA</a
-                >
-              </button>
-            </div>
-
-            <div class="product-box">
-              <p class="title">
-                <a href="detailproduct.html">The Davinci Code</a>
-              </p>
-              <img
-                class="photo"
-                src="..\img\Davinci.png"
-                alt="Davinci"
-                onclick='window.open("detailproduct.html")'
-              />
-              <br /><br />
-              <p style="font-size: small">
-                Đơn giá: <span style="color: red">265,000 VNĐ</span>
-              </p>
-              <br />
-              <button class="buyBtn">
-                <a href="detailproduct.html"
-                  ><i
-                    style="color: aliceblue"
-                    class="fa fa-shopping-cart"
-                    aria-hidden="true"
-                  ></i>
-                  ĐẶT MUA</a
-                >
-              </button>
-            </div>
-
-            <div class="product-box">
-              <p class="title">
-                <a href="detailproduct.html">Harry Potter</a>
-              </p>
-              <img
-                class="photo"
-                src="..\img\harrypotter.png"
-                alt="harrypotter"
-                onclick='window.open("detailproduct.html")'
-              />
-              <br /><br />
-              <p style="font-size: small">
-                Đơn giá: <span style="color: red">267,000 VNĐ</span>
-              </p>
-              <br />
-              <button class="buyBtn">
-                <a href="detailproduct.html"
-                  ><i
-                    style="color: aliceblue"
-                    class="fa fa-shopping-cart"
-                    aria-hidden="true"
-                  ></i>
-                  ĐẶT MUA</a
-                >
-              </button>
-            </div>
-
-            <div class="product-box">
-              <p class="title">
-                <a href="detailproduct.html">Giáo trình Tin học cơ bản</a>
-              </p>
-              <img
-                class="photo"
-                src="..\img\tinhoccoban.jpg"
-                alt="sachtinhoc"
-                onclick='window.open("detailproduct.html")'
-              />
-              <br /><br />
-              <p style="font-size: small">
-                Đơn giá: <span style="color: red">126,000 VNĐ</span>
-              </p>
-              <br />
-              <button class="buyBtn">
-                <a href="detailproduct.html"
-                  ><i
-                    style="color: aliceblue"
-                    class="fa fa-shopping-cart"
-                    aria-hidden="true"
-                  ></i>
-                  ĐẶT MUA</a
-                >
-              </button>
-            </div>
-          </div>
+          <!-- ---------------------------------------------------------------- -->
         </section>
         <aside id="right">
           <div id="rightside" id="bestseller">

@@ -102,6 +102,11 @@ marquee {
   text-align: center;
   padding: 7px;
 }
+#navLogin {
+  background-color: #f8d7da;
+  text-align: center;
+  margin: 20px;
+}
 #leftside {
   border-bottom: blue 1px solid;
   border-left: blue 1px solid;
@@ -196,10 +201,7 @@ p.title a {
   text-decoration: none;
   line-height: 30px;
 }
-section form {
-  background-color: hsl(190, 100%, 97%);
-  padding: 10px;
-}
+
 div.registration {
   margin: 10px;
   border: 1px solid #c1a8a8;
@@ -241,12 +243,7 @@ table.detail {
   height: 100px;
   width: 850px;
 }
-table.login {
-  margin: 10px;
-  background-color: rgba(0, 255, 255, 0.716);
-  height: 100px;
-  width: 850px;
-}
+
 .largeFont {
   font-size: large;
 }
@@ -272,4 +269,26 @@ body p#title {
 div.btn-group {
   margin-left: 20px;
 }
+legend#titleNav {
+  height: 200px;
+  width: 100px;
+  background-color: 44FEFF;
+}
+div.login {
+  height: 280px;
+  width: 700px;
+  background-color: rgba(0, 255, 255, 0.716);
+  margin-top: 20px;
+}
+#tableLogin {
+  height: 100px;
+}
 
+form#contact{
+  margin-top: 100px;
+  background-color:#00d5ff;
+  width: 300px;
+}
+button#contact{
+  width: 200px;
+}
