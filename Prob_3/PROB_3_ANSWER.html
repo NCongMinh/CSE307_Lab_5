@@ -17,12 +17,12 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
     <script>
       function SaveContact() {
-        const name = document.getElementById("name").value;
+        const name = document.getElementById("username").value;
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
         if (!name || !email || !message) {
@@ -35,43 +35,48 @@
       }
     </script>
     <center>
-      <center>
-        <form action="" onsubmit="SaveContact()" id="contact">
+      <form action="" onsubmit="SaveContact()">
+        <center>
           <h1><strong>Contact Us</strong></h1>
-          <table>
-            <tr>
-              <td>
-                <p>Name:</p>
-                <input type="text" name="name" id="name" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Email:</p>
-                <input type="email" name="email" id="email" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Message:</p>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="3"
-                ></textarea>
-              </td>
-            </tr>
-            <tr style="text-align: center">
-              <td>
-                <button type="submit" class="btn btn-primary" id="contact">
-                  Submit
-                </button>
-              </td>
-            </tr>
-          </table>
-        </form>
-      </center>
+        </center>
+        <table>
+          <tr>
+            <td>
+              <p id="">Name:</p>
+              <input type="text" name="username" id="username" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Email:</p>
+              <input type="email" name="email" id="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Message:</p>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="3"
+              ></textarea>
+              <br /><br />
+            </td>
+          </tr>
+          <tr style="text-align: center">
+            <td>
+              <button
+                type="submit"
+                class="btn btn-success"
+                style="width: 275px"
+              >
+                SUBMIT
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
     </center>
   </body>
 </html>
