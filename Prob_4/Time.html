@@ -5,23 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Current Local Time</title>
     <script>
+      const weekday = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      const month = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
       function getCurrentTime() {
-        var currentDate = new Date();
-
-        var date = currentDate.toLocaleDateString();
-        var time = currentDate.toLocaleTimeString();
+        let currentDate = new Date();
+        let day = currentDate.getDay();
+        let monthIdx = currentDate.getMonth();
+        let year = currentDate.getFullYear();
+        let date = currentDate.toLocaleDateString();
+        let time = currentDate.toLocaleTimeString();
 
         document.getElementById("currentDateTime").innerHTML =
-          "Current Local Time: " + date + " " + time;
-        document.write("Now: " + time);
-        document.write("<br>");
-        document.write("Today: " + date);
+          currentDate +
+          "</br>Now:  " +
+          time +
+          "</br>" +
+          "<span style='color: blue'>" +
+          "Today: " +
+          weekday[day] +
+          ", " +
+          month[monthIdx] +
+          ", " +
+          year +
+          "</span>";
       }
-
-      window.onload = getCurrentTime;
     </script>
   </head>
-  <body>
+  <body onload="getCurrentTime()">
     <div id="currentDateTime"></div>
   </body>
 </html>
